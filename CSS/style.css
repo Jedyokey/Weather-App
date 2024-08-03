@@ -97,8 +97,58 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
     .card {
+        padding: 40px 15px;
+    }   
+    .card .weather h1 {
+        font-size: 60px;
+        font-weight: 400;
+    }
+    .card .weather h2 {
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .card .weather .details {
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    .card .weather .details .col img {
+        width: 40px;
+        margin-right: 0;
+    }
+    .card .weather .details .col .humidity, .card .weather .details .col .wind {
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 250px) and (max-width: 400px) {
+    .card {
+        width: 95%;
+    }
+    .card .search input {
         width: 100%;
+    }
+    .card .weather h1 {
+        font-size: 60px;
+        font-weight: 400;
+    }
+    .card .weather h2 {
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .card .weather .details {
+        padding: 0 10px;
+        margin-top: 30px;
+    }
+    .details .col {
+        padding: 0 ;
+        text-align: center;
+    }
+    .card .weather .details .col img {
+        width: 32px;
+        margin-right: 0;
+    }   
+    .card .weather .details .col .humidity, .card .weather .details .col .wind {
+        font-size: 25px;
     }
 }
